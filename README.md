@@ -25,7 +25,7 @@
             border: 3px solid #a29bfe;
             padding: 20px;
             width: 90%;
-            max-width: 600px;
+            max-width: 400px; /* Adjusted for mobile devices */
             background-color: rgba(32, 0, 44, 0.9);
             border-radius: 15px;
             box-shadow: 0 0 20px #a29bfe;
@@ -33,7 +33,7 @@
 
         h1 {
             color: #a29bfe;
-            font-size: 3em;
+            font-size: 2.5em; /* Slightly smaller for better readability on mobile */
             margin-bottom: 10px;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -41,7 +41,7 @@
         }
 
         p {
-            font-size: 1.2em;
+            font-size: 1.1em; /* Adjusted for mobile readability */
             margin: 10px 0;
         }
 
@@ -58,6 +58,7 @@
             color: #a29bfe;
             text-decoration: none;
             font-weight: bold;
+            word-wrap: break-word; /* Ensures long text doesn't overflow */
         }
 
         .contact-info a:hover {
@@ -69,9 +70,9 @@
         }
 
         .button {
-            display: inline-block;
+            display: block;
             padding: 10px 20px;
-            margin: 10px;
+            margin: 10px auto;
             font-size: 1em;
             color: #fff;
             background-color: #6c5ce7;
@@ -81,37 +82,9 @@
             text-decoration: none;
             box-shadow: 0 0 10px #6c5ce7;
             transition: background-color 0.3s, box-shadow 0.3s;
+            width: 80%; /* Adjusted for mobile */
         }
 
         .button:hover {
             background-color: #a29bfe;
-            box-shadow: 0 0 15px #a29bfe;
-        }
-
-        @keyframes glitch {
-            0% { transform: translate(0); }
-            20% { transform: translate(-2px, 2px); }
-            40% { transform: translate(-2px, -2px); }
-            60% { transform: translate(2px, 2px); }
-            80% { transform: translate(2px, -2px); }
-            100% { transform: translate(0); }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Powaret Rurkrai</h1>
-        <p>Welcome to my personal webpage. Let's connect!</p>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-            <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
-        </div>
-        <div class="buttons">
-            <a href="https://yourportfolio.com" class="button">Portfolio</a>
-            <a href="https://linkedin.com/in/yourprofile" class="button">LinkedIn</a>
-            <a href="https://github.com/yourgithub" class="button">GitHub</a>
-        </div>
-    </div>
-</body>
-</html>
-12:35 PM 8/19/2024
+            box-shadow: 0 0 15px
