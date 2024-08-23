@@ -80,12 +80,12 @@
             text-transform: uppercase;
             text-decoration: none;
             box-shadow: 0 0 10px #6c5ce7;
-            transition: background-color 0.3s, box-shadow 0.3s;
+            transition: background-color 0.5s, box-shadow 0.3s;
         }
 
         .button:hover {
             background-color: #a29bfe;
-            box-shadow: 0 0 15px #a29bfe;
+            box-shadow: 0 0 16px #a29bfe;
         }
 
         @keyframes glitch {
